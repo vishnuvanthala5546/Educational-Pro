@@ -4,6 +4,123 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
+.data-form input[type="text"],.data-form input[type="email"] {
+  width: 70%;
+  color: #555;
+  float: left;
+  background: none;
+  outline: none;
+  font-size: .9em;
+  padding: .7em 1em;
+  margin-bottom: 1.5em;
+  border: solid 1px #999;
+  -webkit-appearance: none;
+  display: inline-block;
+}
+input.phone {
+  width: 100% !important;
+  float: none;
+}
+.data-form textarea.txtAddpresent {
+  resize: none;
+  width: 80.2%;
+  background: none;
+  color: #999;
+  font-size: .9em;
+  outline: none;
+  padding: .6em .8em;
+  border: solid 1px #999;
+  min-height: 6em;
+  -webkit-appearance: none;
+}
+.data-form input.email {
+  margin: 0 0 0 1.8em;
+}
+.data-form input[type="button"] {
+  outline: none;
+  color: #fff;
+  padding: 0.6em 3em;
+  font-size: .9em;
+  margin: 1em 0 0 0;
+  -webkit-appearance: none;
+  background: #e53238;
+  transition: 0.5s all;
+  border: 1px solid #e53238;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -moz-transition: 0.5s all;
+}
+.data-form input[type="submit"]:hover {
+  background: #0064d2;
+  border: 1px solid #0064d2;
+}
+
+
+ h4{
+  color:#FFFFFF;
+  font-size:36px;
+  font-weight:700;
+  position:relative;
+}
+.page-top{
+  float:left;
+  padding-bottom:50px;
+  padding-top:80px;
+  position:relative;
+  text-align:center;
+  width:100%;
+}
+.page-top.extra-gap{
+  padding-top:213px;
+}
+.page-top:before{
+  background:none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+  content:"";
+  height:100%;
+  width:100%;
+  position:absolute;
+  left:0;
+  top:0;
+}
+.page-top h1{
+  color:#FFFFFF;
+  font-size:36px;
+  font-weight:700;
+  position:relative;
+}
+.page-top ul{
+  display:table;
+  float:none;
+  margin:20px auto;
+  position:relative;
+  width:auto;
+}
+.page-top ul li{
+  float:left;
+  padding:0 20px 0 0;
+}
+.page-top ul li a{
+  color:#EDECEC;
+  float:left;
+  font-size:13px;
+  padding:0 20px 0 0;
+  position:relative;
+  text-transform:uppercase;
+}
+.page-top ul li a:after{
+  content:"/";
+  position:absolute;
+  right:0;
+}
+.page-top ul li:last-child, .page-top ul li:last-child a{
+  padding-right:0;
+}
+.page-top ul li:last-child a:after{
+  display:none;
+}
+
+
 html, body{
     font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
@@ -42,7 +159,7 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
 i.fa.fa-graduation-cap {
         font-size: 0.8em;
        color: #ffcc33;
-   
+
     right: -11px;
     position: absolute;
     top: -9px;
@@ -70,6 +187,7 @@ i.fa.fa-graduation-cap {
 	display: inline-block;
     color: #212121;
     margin-left: 0em;
+
 }
 .agileits_w3layouts_sign_in ul li a {
     display: inline-block;
@@ -77,7 +195,7 @@ i.fa.fa-graduation-cap {
     background: #000000;
     color: #fff;
     text-decoration: none;
-	letter-spacing: 1px;
+	  letter-spacing: 1px;
     text-transform: uppercase;
 }
 .agileits_w3layouts_sign_in ul li a:hover,.agileits_w3layouts_sign_in ul li a.active{
@@ -390,7 +508,7 @@ h3.agileinfo_sign  {
     cursor: pointer;
     background: #0064d2;
     box-shadow: 0px 2px 1px rgba(28, 28, 29, 0.42);
-	
+
 }
 .signin-form input[type="submit"]:hover {
     color: #fff;
@@ -474,7 +592,7 @@ h3.agileinfo_sign  {
 	margin:0;
 }
 select.form-control {
-    width: 49%;
+    width: 70%;
     padding: 1em 1em 1em 1em;
     font-size: 0.8em;
     margin: 0.5em 0;
@@ -508,7 +626,7 @@ select.form-control.two {
     box-shadow: 0px 2px 1px rgba(28, 28, 29, 0.42);
 	float:left;
 	margin-right:2%;
-	
+
 }
 .address input[type="reset"] {
 	margin-right:0;
@@ -522,7 +640,7 @@ select.form-control.two {
 /*-- //banner --*/
 .wthree-counter-agile {
     width: 73%;
-     
+
     margin: 8% auto 8%;
 }
 /*-- banner-bottom --*/
@@ -661,7 +779,7 @@ i.fa.fa-anchor, i.fa.fa-comment, i.fa.fa-heartbeat,i.fa.fa-magnet,i.fa.fa-thumbs
 }
 .services-right-grid:hover div.hvr-radial-in:before{
   -webkit-transform: scale(0);
-  transform: scale(0);	
+  transform: scale(0);
 }
 .services-right-grid:hover i.fa.fa-anchor,.services-right-grid:hover i.fa.fa-comment,.services-right-grid:hover i.fa.fa-heartbeat,.services-right-grid:hover i.fa.fa-magnet,.services-right-grid:hover  i.fa.fa-thumbs-up{
 	color:#FFFFFF;
@@ -669,7 +787,7 @@ i.fa.fa-anchor, i.fa.fa-comment, i.fa.fa-heartbeat,i.fa.fa-magnet,i.fa.fa-thumbs
 	-webkit-transition: 0.5s all;
 	-o-transition: 0.5s all;
 	-moz-transition: 0.5s all;
-	-ms-transition: 0.5s all;	
+	-ms-transition: 0.5s all;
 }
 .services-icon-info h5{
         color: #e53238;
@@ -710,7 +828,7 @@ i.fa.fa-anchor, i.fa.fa-comment, i.fa.fa-heartbeat,i.fa.fa-magnet,i.fa.fa-thumbs
     color: #fff;
     text-align: center;
     letter-spacing: 3px;
-	
+
 }
 .countdown-timer-w3laits h4 {
     margin-bottom:30px;
@@ -723,7 +841,7 @@ i.fa.fa-anchor, i.fa.fa-comment, i.fa.fa-heartbeat,i.fa.fa-magnet,i.fa.fa-thumbs
 section.examples {
     margin-top: 4em;
 }
-.countdown-timer-w3laits h3  span{ 
+.countdown-timer-w3laits h3  span{
 	     color: #ff8c00;
 }
 span.simply-amount {
@@ -804,7 +922,7 @@ span.simply-word {
 	-moz-transform: translateY(-10%) rotate(-42deg) scale(1.5);
     transform: translateY(-10%) rotate(-42deg) scale(1.5);
 	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s; 
+	-moz-transition: all 0.5s;
     transition: all 0.5s;
     width: 134%;
 }
@@ -903,7 +1021,7 @@ span.simply-word {
     width: 50px;
     height: 50px;
     margin: 0 auto;
-} 
+}
 .item-type-move .item-hover {
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
@@ -912,7 +1030,7 @@ span.simply-word {
     text-decoration: none;
     background: #FF69B4;
 	display:block;
-} 
+}
 /*-- //jzBox-lightbox --*/
 /*-- //gallery --*/
 /*-- team --*/
@@ -951,7 +1069,7 @@ span.simply-word {
 	margin: 0;
 	padding: 0;
 }
-.wthree_team_grid1 figure {	
+.wthree_team_grid1 figure {
 	margin: 0;
 	padding: 0;
 	background: #fff;
@@ -1227,7 +1345,7 @@ input.phone {
     background: #f12b24;
 }
 .ftr-grid h3 span{
-	
+
 }
 .ftr-grid p {
        font-size: 0.85em;
@@ -1367,12 +1485,12 @@ ul.top-links li {
 	color:#999 !important;
 }
 :-moz-placeholder { /* Firefox 18- */
-	color:#999 !important; 
+	color:#999 !important;
 }
 ::-moz-placeholder {  /* Firefox 19+ */
 	color:#999 !important;
 }
-:-ms-input-placeholder {  
+:-ms-input-placeholder {
 	color:#999 !important;
 }
 /*--//placeholder-color--*/
@@ -1399,7 +1517,7 @@ ul.top-links li {
 	bottom: 20px;
 	right: 2%;
 	overflow: hidden;
-	z-index: 999; 
+	z-index: 999;
 	width: 32px;
 	height: 32px;
 	border: none;
@@ -2208,7 +2326,7 @@ ul.top-links li {
 		float: left;
 		width: 52%;
 	}
-	
+
 }
 @media (max-width:480px){
 	.logo-agileits h1 a {
